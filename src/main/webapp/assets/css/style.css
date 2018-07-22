@@ -1,0 +1,25 @@
+.main-content {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.main-header {
+    padding-bottom: 30px;
+}
+
+.main-header .title {
+    font-size: 27px;
+    margin-bottom: 0;
+}
+
+.footer-copy {
+    text-align: center;
+}
+
+.question {
+    display: flex;
+}
+
+.question span {
+    padding-right: 5px;
+}

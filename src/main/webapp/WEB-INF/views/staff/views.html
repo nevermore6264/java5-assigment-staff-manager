@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{/layout.html}">
+<head>
+    <meta charset="UTF-8">
+    <title>View Player In Country <span th:text="${country.name}"></span></title>
+</head>
+<body>
+<section layout:fragment="content">
+    <div class="main-header row">
+        <div class="col-md-6">
+            <h2 class="title">List Player</h2>
+        </div>
+    </div>
+
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Country</th>
+            <th>Position</th>
+            <th>Club</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="player : ${players}">
+            <td>
+                <a th:text="${player.name}"></a>
+            </td>
+            <td th:text="${player.country.name}"></td>
+            <td th:text="${player.position}"></td>
+            <td th:text="${player.club}"></td>
+        </tr>
+        </tbody>
+    </table>
+    <div>
+        <a th:href="@{'/players'(page=${players.number - 1})}" th:if="${players.hasPrevious()}">Previous</a>
+        <span th:text="${players.number + 1}"></span>/<span th:text="${players.totalPages}"></span>
+        <a th:href="@{'/players'(page=${players.number + 1})}" th:if="${players.hasNext()}">Next</a>
+    </div>
+</section>

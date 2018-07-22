@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{/layout.html}">
+<head>
+    <meta charset="UTF-8">
+    <title>List Staff</title>
+    <style>
+        .picture{
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+<section layout:fragment="content">
+    <div class="main-header row">
+        <div class="col-md-6">
+            <h2 class="title">List Staff</h2>
+        </div>
+        <div class="col-md-6 text-right">
+            <a href="/staffs/create" class="btn btn-primary">Create Staff</a>
+        </div>
+    </div>
+
+    <form>
+        Search by name:
+        <input name="string" class="form-control" type="text"/>
+        <input type="submit" value="Search" class="btn btn-primary"/>
+    </form>
+
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Serial</th>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>Picture</th>
+            <th>Birthday</th>
+            <th>Salary</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Depart</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="staff , inter:${staffs}">
+            <td th:text="${inter.count}"></td>
+
+            <td>
+                <a th:text="${staff.name}" th:href="@{/staffs/__${staff.id}__/views}"></a>
+            </td>
+
+            <td th:switch="staff.gender">
+                <a th:case="0">Female</a>
+                <a th:case="1">Male</a>
+            </td>
+
+            <td>
+                <img class="picture" th:src="'/assets/imgs/' + ${staff.photo}"> </img>
+            </td>
+
+            <td th:text="${#dates.format(staff.birthday,'dd/MM/yyyy')}">
+
+            </td>
+
+            <td>
+                <a th:text="${#numbers.formatDecimal(staff.salary, 0, 'COMMA', 3, 'POINT')}"
+                   th:value="${staff.salary}"></a>
+            </td>
+
+            <td>
+                <a th:text="${staff.email}"></a>
+            </td>
+
+            <td>
+                <a th:text="${staff.phone}"></a>
+            </td>
+
+            <td>
+                <a th:text="${staff.getDepart().name}"></a>
+            </td>
+
+            <td>
+                <a th:href="@{/staffs/__${staff.id}__/edit}">Edit</a>
+            </td>
+            <td>
+                <a th:href="@{/staffs/__${staff.id}__/delete}" class="text-danger">Delete</a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <div>
+        <a th:href="@{'/staffs'(page=${staffs.number - 1})}" th:if="${staffs.hasPrevious()}">Previous</a>
+        <span th:text="${staffs.number + 1}"></span>/<span th:text="${staffs.totalPages}"></span>
+        <a th:href="@{'/staffs'(page=${staffs.number + 1})}" th:if="${staffs.hasNext()}">Next</a>
+    </div>
+</section>
