@@ -1,0 +1,1536 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Gradle : com.codegym : java5-assignment-employee-manager  -1.0-SNAPSHOT.war" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8130d0c6-2aa7-40e9-946a-77b0fcdbc95b" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.gradle/4.7/fileChanges/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/4.7/fileHashes/fileHashes.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/4.7/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/vcsWorkingDirs/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/classes/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/classes/com/fpoly/config/ApplicationConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/classes/com/fpoly/config/ApplicationInitializer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/classes/com/fpoly/controller/DepartController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/classes/com/fpoly/controller/HomeController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/classes/com/fpoly/controller/RecordController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/classes/com/fpoly/controller/StaffController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/classes/com/fpoly/formatter/DepartFormatter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/classes/com/fpoly/formatter/StaffFormatter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/classes/com/fpoly/model/Depart.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/classes/com/fpoly/model/Record.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/classes/com/fpoly/model/Staff.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/classes/com/fpoly/model/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/classes/com/fpoly/repository/DepartRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/classes/com/fpoly/repository/RecordRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/classes/com/fpoly/repository/StaffRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/classes/com/fpoly/service/DepartService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/classes/com/fpoly/service/RecordService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/classes/com/fpoly/service/StaffService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/classes/com/fpoly/service/impl/DepartServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/classes/com/fpoly/service/impl/RecordServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/classes/com/fpoly/service/impl/StaffServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/lib/antlr-2.7.7.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/lib/aopalliance-1.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/lib/asm-6.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/lib/asm-analysis-6.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/lib/asm-commons-6.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/lib/asm-tree-6.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/lib/asm-util-6.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/lib/aspectjrt-1.8.13.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/lib/attoparser-2.0.4.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/lib/byte-buddy-1.8.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/lib/classmate-1.3.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/lib/commons-beanutils-1.7.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/lib/commons-codec-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/lib/commons-collections-3.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/lib/commons-digester-1.6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/lib/commons-httpclient-3.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/lib/commons-lang-2.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/lib/commons-logging-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/lib/commons-validator-1.2.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/lib/dom4j-1.6.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/lib/doxia-core-1.1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/lib/doxia-decoration-model-1.1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/lib/doxia-logging-api-1.1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/lib/doxia-module-fml-1.1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/lib/doxia-module-xhtml-1.1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/lib/doxia-sink-api-1.1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/lib/doxia-site-renderer-1.1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/lib/file-management-1.2.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/lib/groovy-2.4.13.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/lib/hibernate-commons-annotations-5.0.3.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/lib/hibernate-core-5.3.0.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/lib/hibernate-entitymanager-5.3.0.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/lib/hibernate-validator-6.0.10.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/lib/jacoco-maven-plugin-0.8.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/lib/jandex-2.0.3.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/lib/javassist-3.22.0-GA.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/lib/javax.persistence-api-2.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/lib/javax.servlet-api-3.1.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/lib/jboss-logging-3.3.2.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/lib/jboss-transaction-api_1.2_spec-1.0.1.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/lib/jcl-over-slf4j-1.7.25.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/lib/junit-3.8.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/lib/maven-artifact-2.0.10.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/lib/maven-artifact-manager-2.0.10.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/lib/maven-model-2.0.10.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/lib/maven-plugin-api-2.0.10.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/lib/maven-plugin-registry-2.0.10.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/lib/maven-profile-2.0.10.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/lib/maven-project-2.0.10.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/lib/maven-reporting-api-3.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/lib/maven-reporting-impl-2.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/lib/maven-repository-metadata-2.0.10.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/lib/maven-settings-2.0.10.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/lib/maven-shared-io-1.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/lib/mysql-connector-java-8.0.11.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/lib/ognl-3.1.12.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/lib/org.jacoco.agent-0.8.1-runtime.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/lib/org.jacoco.core-0.8.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/lib/org.jacoco.report-0.8.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/lib/oro-2.0.8.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/lib/plexus-classworlds-1.2-alpha-9.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/lib/plexus-container-default-1.0-alpha-30.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/lib/plexus-i18n-1.0-beta-7.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/lib/plexus-interpolation-1.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/lib/plexus-utils-3.0.22.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/lib/plexus-velocity-1.1.7.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/lib/protobuf-java-2.6.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/lib/slf4j-api-1.7.25.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/lib/spring-aop-4.3.17.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/lib/spring-beans-4.3.17.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/lib/spring-context-4.3.17.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/lib/spring-core-4.3.17.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/lib/spring-data-commons-1.13.12.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/lib/spring-data-jpa-1.11.12.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/lib/spring-expression-4.3.17.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/lib/spring-jdbc-4.3.17.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/lib/spring-orm-4.3.17.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/lib/spring-security-acl-4.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/lib/spring-security-config-4.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/lib/spring-security-core-4.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/lib/spring-security-taglibs-4.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/lib/spring-security-web-4.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/lib/spring-tx-4.3.17.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/lib/spring-web-4.3.17.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/lib/spring-webmvc-4.3.17.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/lib/thymeleaf-3.0.9.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/lib/thymeleaf-expression-processor-1.1.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/lib/thymeleaf-extras-springsecurity4-3.0.2.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/lib/thymeleaf-layout-dialect-2.3.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/lib/thymeleaf-spring4-3.0.9.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/lib/unbescape-1.1.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/lib/validation-api-2.0.1.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/lib/velocity-1.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/lib/wagon-provider-api-1.0-beta-2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/lib/xercesImpl-2.8.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/views/depart/create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/views/depart/delete.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/views/depart/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/views/depart/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/views/error403.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/views/error404.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/views/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/views/layout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/views/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/views/record/create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/views/record/delete.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/views/record/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/views/record/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/views/staff/create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/views/staff/delete.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/views/staff/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/views/staff/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/WEB-INF/views/staff/views.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/assets/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/assets/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/assets/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/assets/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/assets/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/assets/imgs/hieu.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/assets/imgs/hung.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/assets/imgs/thuy.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/assets/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/assets/js/bootstrap.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/assets/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/assets/js/bootstrap.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/assets/js/jquery-3.3.1.slim.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/java5-assignment-employee-manager  -1.0-SNAPSHOT.war/assets/js/popper.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/java5-assignment-employee-manager  -1.0-SNAPSHOT.war" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/tmp/war/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/com/fpoly/config/ApplicationConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/com/fpoly/config/ApplicationInitializer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/com/fpoly/controller/DepartController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/com/fpoly/controller/HomeController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/com/fpoly/controller/RecordController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/com/fpoly/controller/StaffController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/com/fpoly/formatter/DepartFormatter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/com/fpoly/formatter/StaffFormatter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/com/fpoly/model/Depart.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/com/fpoly/model/Record.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/com/fpoly/model/Staff.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/com/fpoly/model/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/com/fpoly/repository/DepartRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/com/fpoly/repository/RecordRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/com/fpoly/repository/StaffRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/com/fpoly/service/DepartService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/com/fpoly/service/RecordService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/com/fpoly/service/StaffService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/com/fpoly/service/impl/DepartServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/com/fpoly/service/impl/RecordServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/com/fpoly/service/impl/StaffServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fpoly/formatter/StaffFormatter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/record/create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/record/delete.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/record/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/record/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fpoly/config/ApplicationConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fpoly/config/ApplicationConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fpoly/controller/RecordController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fpoly/controller/RecordController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fpoly/model/Record.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fpoly/model/Record.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/staff/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/staff/edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/staff/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/staff/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/staff/views.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/staff/views.html" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/.gradle/" />
+    <ignored path="$PROJECT_DIR$/build/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="java5-assignment-employee-manager  " type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="ApplicationConfig.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/fpoly/config/ApplicationConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="950">
+              <caret line="154" column="25" selection-start-line="154" selection-start-column="25" selection-end-line="154" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RecordController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/fpoly/controller/RecordController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="377">
+              <caret line="26" column="14" lean-forward="true" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Record.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/fpoly/model/Record.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="320">
+              <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
+              <folding>
+                <element signature="e#942#943#0" expanded="true" />
+                <element signature="e#967#968#0" expanded="true" />
+                <element signature="e#1001#1002#0" expanded="true" />
+                <element signature="e#1029#1030#0" expanded="true" />
+                <element signature="e#1060#1061#0" expanded="true" />
+                <element signature="e#1087#1088#0" expanded="true" />
+                <element signature="e#1128#1129#0" expanded="true" />
+                <element signature="e#1160#1161#0" expanded="true" />
+                <element signature="e#1193#1194#0" expanded="true" />
+                <element signature="e#1222#1223#0" expanded="true" />
+                <element signature="e#1266#1267#0" expanded="true" />
+                <element signature="e#1302#1303#0" expanded="true" />
+                <element signature="e#1335#1336#0" expanded="true" />
+                <element signature="e#1366#1367#0" expanded="true" />
+                <element signature="e#1412#1413#0" expanded="true" />
+                <element signature="e#1452#1453#0" expanded="true" />
+                <element signature="e#1483#1484#0" expanded="true" />
+                <element signature="e#1511#1512#0" expanded="true" />
+                <element signature="e#1552#1553#0" expanded="true" />
+                <element signature="e#1586#1587#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="create.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/record/create.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="370">
+              <caret line="42" column="14" selection-start-line="42" selection-start-column="14" selection-end-line="42" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>viewslogin</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="myGradleHomes">
+      <map>
+        <entry key="$PROJECT_DIR$" value="C:\Users\Admin\Downloads\gradle-4.7" />
+      </map>
+    </option>
+    <option name="myGradleVersions">
+      <map>
+        <entry key="$PROJECT_DIR$" value="4.7" />
+      </map>
+    </option>
+    <option name="availableProjects">
+      <map>
+        <entry>
+          <key>
+            <ExternalProjectPojo>
+              <option name="name" value="java5-assignment-employee-manager  " />
+              <option name="path" value="$PROJECT_DIR$" />
+            </ExternalProjectPojo>
+          </key>
+          <value>
+            <list>
+              <ExternalProjectPojo>
+                <option name="name" value="java5-assignment-employee-manager  " />
+                <option name="path" value="$PROJECT_DIR$" />
+              </ExternalProjectPojo>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="availableTasks">
+      <map>
+        <entry key="$PROJECT_DIR$">
+          <value>
+            <list>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the components produced by root project 'java5-assignment-employee-manager  '. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="components" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="buildDependents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the sub-projects of root project 'java5-assignment-employee-manager  '." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="projects" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles main classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="classes" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the dependent components of components in root project 'java5-assignment-employee-manager  '. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="dependentComponents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays all buildscript dependencies declared in root project 'java5-assignment-employee-manager  '." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="buildEnvironment" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates Gradle wrapper files." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="wrapper" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Verifies code coverage metrics based on specified rules for the test task." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="jacocoTestCoverageVerification" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles test classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="testClasses" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates Javadoc API documentation for the main source code." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="javadoc" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles a jar archive containing the main classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="jar" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the configuration model of root project 'java5-assignment-employee-manager  '. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="model" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes main resources." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="processResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the tasks runnable from root project 'java5-assignment-employee-manager  '." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="tasks" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Initializes a new Gradle build." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="init" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs the unit tests." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="test" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles main Java source." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="compileJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates a war archive with all the compiled classes, the web-app content and the libraries." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="war" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the insight into a specific dependency in root project 'java5-assignment-employee-manager  '." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="dependencyInsight" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs all checks." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="check" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates code coverage report for the test task." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="jacocoTestReport" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles the outputs of this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="assemble" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Deletes the build directory." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="clean" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles test Java source." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="compileTestJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays all dependencies declared in root project 'java5-assignment-employee-manager  '." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="dependencies" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes test resources." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="processTestResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays a help message." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="help" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="build" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects it depends on." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="buildNeeded" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the properties of root project 'java5-assignment-employee-manager  '." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="properties" />
+              </ExternalTaskPojo>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="modificationStamps">
+      <map>
+        <entry key="$PROJECT_DIR$" value="4594759150515" />
+        <entry key="$PROJECT_DIR$/.gradle" value="0" />
+        <entry key="$PROJECT_DIR$/build.gradle" value="1585672399" />
+        <entry key="$PROJECT_DIR$/settings.gradle" value="2541485023" />
+      </map>
+    </option>
+    <option name="projectBuildClasspath">
+      <map>
+        <entry key="$PROJECT_DIR$">
+          <value>
+            <ExternalProjectBuildClasspathPojo>
+              <option name="modulesBuildClasspath">
+                <map>
+                  <entry key="$PROJECT_DIR$">
+                    <value>
+                      <ExternalModuleBuildClasspathPojo>
+                        <option name="path" value="$PROJECT_DIR$" />
+                      </ExternalModuleBuildClasspathPojo>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="name" value="java5-assignment-employee-manager  " />
+              <option name="projectBuildClasspath">
+                <list>
+                  <option value="$USER_HOME$/Downloads/gradle-4.7/lib/ant-1.9.9.jar" />
+                  <option value="$USER_HOME$/Downloads/gradle-4.7/lib/ant-launcher-1.9.9.jar" />
+                  <option value="$USER_HOME$/Downloads/gradle-4.7/lib/gradle-base-services-4.7.jar" />
+                  <option value="$USER_HOME$/Downloads/gradle-4.7/lib/gradle-base-services-groovy-4.7.jar" />
+                  <option value="$USER_HOME$/Downloads/gradle-4.7/lib/gradle-build-cache-4.7.jar" />
+                  <option value="$USER_HOME$/Downloads/gradle-4.7/lib/gradle-build-option-4.7.jar" />
+                  <option value="$USER_HOME$/Downloads/gradle-4.7/lib/gradle-cli-4.7.jar" />
+                  <option value="$USER_HOME$/Downloads/gradle-4.7/lib/gradle-core-4.7.jar" />
+                  <option value="$USER_HOME$/Downloads/gradle-4.7/lib/gradle-core-api-4.7.jar" />
+                  <option value="$USER_HOME$/Downloads/gradle-4.7/lib/gradle-docs-4.7.jar" />
+                  <option value="$USER_HOME$/Downloads/gradle-4.7/lib/gradle-installation-beacon-4.7.jar" />
+                  <option value="$USER_HOME$/Downloads/gradle-4.7/lib/gradle-jvm-services-4.7.jar" />
+                  <option value="$USER_HOME$/Downloads/gradle-4.7/lib/gradle-kotlin-dsl-0.16.3.jar" />
+                  <option value="$USER_HOME$/Downloads/gradle-4.7/lib/gradle-kotlin-dsl-tooling-builders-0.16.3.jar" />
+                  <option value="$USER_HOME$/Downloads/gradle-4.7/lib/gradle-kotlin-dsl-tooling-models-0.16.3.jar" />
+                  <option value="$USER_HOME$/Downloads/gradle-4.7/lib/gradle-launcher-4.7.jar" />
+                  <option value="$USER_HOME$/Downloads/gradle-4.7/lib/gradle-logging-4.7.jar" />
+                  <option value="$USER_HOME$/Downloads/gradle-4.7/lib/gradle-messaging-4.7.jar" />
+                  <option value="$USER_HOME$/Downloads/gradle-4.7/lib/gradle-model-core-4.7.jar" />
+                  <option value="$USER_HOME$/Downloads/gradle-4.7/lib/gradle-model-groovy-4.7.jar" />
+                  <option value="$USER_HOME$/Downloads/gradle-4.7/lib/gradle-native-4.7.jar" />
+                  <option value="$USER_HOME$/Downloads/gradle-4.7/lib/gradle-persistent-cache-4.7.jar" />
+                  <option value="$USER_HOME$/Downloads/gradle-4.7/lib/gradle-process-services-4.7.jar" />
+                  <option value="$USER_HOME$/Downloads/gradle-4.7/lib/gradle-resources-4.7.jar" />
+                  <option value="$USER_HOME$/Downloads/gradle-4.7/lib/gradle-runtime-api-info-4.7.jar" />
+                  <option value="$USER_HOME$/Downloads/gradle-4.7/lib/gradle-tooling-api-4.7.jar" />
+                  <option value="$USER_HOME$/Downloads/gradle-4.7/lib/gradle-wrapper-4.7.jar" />
+                  <option value="$USER_HOME$/Downloads/gradle-4.7/lib/groovy-all-2.4.12.jar" />
+                  <option value="$USER_HOME$/Downloads/gradle-4.7/lib/plugins/gradle-announce-4.7.jar" />
+                  <option value="$USER_HOME$/Downloads/gradle-4.7/lib/plugins/gradle-antlr-4.7.jar" />
+                  <option value="$USER_HOME$/Downloads/gradle-4.7/lib/plugins/gradle-build-cache-http-4.7.jar" />
+                  <option value="$USER_HOME$/Downloads/gradle-4.7/lib/plugins/gradle-build-comparison-4.7.jar" />
+                  <option value="$USER_HOME$/Downloads/gradle-4.7/lib/plugins/gradle-build-init-4.7.jar" />
+                  <option value="$USER_HOME$/Downloads/gradle-4.7/lib/plugins/gradle-code-quality-4.7.jar" />
+                  <option value="$USER_HOME$/Downloads/gradle-4.7/lib/plugins/gradle-composite-builds-4.7.jar" />
+                  <option value="$USER_HOME$/Downloads/gradle-4.7/lib/plugins/gradle-dependency-management-4.7.jar" />
+                  <option value="$USER_HOME$/Downloads/gradle-4.7/lib/plugins/gradle-diagnostics-4.7.jar" />
+                  <option value="$USER_HOME$/Downloads/gradle-4.7/lib/plugins/gradle-ear-4.7.jar" />
+                  <option value="$USER_HOME$/Downloads/gradle-4.7/lib/plugins/gradle-ide-4.7.jar" />
+                  <option value="$USER_HOME$/Downloads/gradle-4.7/lib/plugins/gradle-ide-native-4.7.jar" />
+                  <option value="$USER_HOME$/Downloads/gradle-4.7/lib/plugins/gradle-ide-play-4.7.jar" />
+                  <option value="$USER_HOME$/Downloads/gradle-4.7/lib/plugins/gradle-ivy-4.7.jar" />
+                  <option value="$USER_HOME$/Downloads/gradle-4.7/lib/plugins/gradle-jacoco-4.7.jar" />
+                  <option value="$USER_HOME$/Downloads/gradle-4.7/lib/plugins/gradle-javascript-4.7.jar" />
+                  <option value="$USER_HOME$/Downloads/gradle-4.7/lib/plugins/gradle-language-groovy-4.7.jar" />
+                  <option value="$USER_HOME$/Downloads/gradle-4.7/lib/plugins/gradle-language-java-4.7.jar" />
+                  <option value="$USER_HOME$/Downloads/gradle-4.7/lib/plugins/gradle-language-jvm-4.7.jar" />
+                  <option value="$USER_HOME$/Downloads/gradle-4.7/lib/plugins/gradle-language-native-4.7.jar" />
+                  <option value="$USER_HOME$/Downloads/gradle-4.7/lib/plugins/gradle-language-scala-4.7.jar" />
+                  <option value="$USER_HOME$/Downloads/gradle-4.7/lib/plugins/gradle-maven-4.7.jar" />
+                  <option value="$USER_HOME$/Downloads/gradle-4.7/lib/plugins/gradle-osgi-4.7.jar" />
+                  <option value="$USER_HOME$/Downloads/gradle-4.7/lib/plugins/gradle-platform-base-4.7.jar" />
+                  <option value="$USER_HOME$/Downloads/gradle-4.7/lib/plugins/gradle-platform-jvm-4.7.jar" />
+                  <option value="$USER_HOME$/Downloads/gradle-4.7/lib/plugins/gradle-platform-native-4.7.jar" />
+                  <option value="$USER_HOME$/Downloads/gradle-4.7/lib/plugins/gradle-platform-play-4.7.jar" />
+                  <option value="$USER_HOME$/Downloads/gradle-4.7/lib/plugins/gradle-plugin-development-4.7.jar" />
+                  <option value="$USER_HOME$/Downloads/gradle-4.7/lib/plugins/gradle-plugin-use-4.7.jar" />
+                  <option value="$USER_HOME$/Downloads/gradle-4.7/lib/plugins/gradle-plugins-4.7.jar" />
+                  <option value="$USER_HOME$/Downloads/gradle-4.7/lib/plugins/gradle-publish-4.7.jar" />
+                  <option value="$USER_HOME$/Downloads/gradle-4.7/lib/plugins/gradle-reporting-4.7.jar" />
+                  <option value="$USER_HOME$/Downloads/gradle-4.7/lib/plugins/gradle-resources-gcs-4.7.jar" />
+                  <option value="$USER_HOME$/Downloads/gradle-4.7/lib/plugins/gradle-resources-http-4.7.jar" />
+                  <option value="$USER_HOME$/Downloads/gradle-4.7/lib/plugins/gradle-resources-s3-4.7.jar" />
+                  <option value="$USER_HOME$/Downloads/gradle-4.7/lib/plugins/gradle-resources-sftp-4.7.jar" />
+                  <option value="$USER_HOME$/Downloads/gradle-4.7/lib/plugins/gradle-scala-4.7.jar" />
+                  <option value="$USER_HOME$/Downloads/gradle-4.7/lib/plugins/gradle-signing-4.7.jar" />
+                  <option value="$USER_HOME$/Downloads/gradle-4.7/lib/plugins/gradle-test-kit-4.7.jar" />
+                  <option value="$USER_HOME$/Downloads/gradle-4.7/lib/plugins/gradle-testing-base-4.7.jar" />
+                  <option value="$USER_HOME$/Downloads/gradle-4.7/lib/plugins/gradle-testing-junit-platform-4.7.jar" />
+                  <option value="$USER_HOME$/Downloads/gradle-4.7/lib/plugins/gradle-testing-jvm-4.7.jar" />
+                  <option value="$USER_HOME$/Downloads/gradle-4.7/lib/plugins/gradle-testing-native-4.7.jar" />
+                  <option value="$USER_HOME$/Downloads/gradle-4.7/lib/plugins/gradle-tooling-api-builders-4.7.jar" />
+                  <option value="$USER_HOME$/Downloads/gradle-4.7/lib/plugins/gradle-version-control-4.7.jar" />
+                  <option value="$USER_HOME$/Downloads/gradle-4.7/lib/plugins/gradle-workers-4.7.jar" />
+                  <option value="$USER_HOME$/Downloads/gradle-4.7/lib/plugins/ivy-2.2.0.jar" />
+                  <option value="$PROJECT_DIR$/buildSrc/src/main/java" />
+                  <option value="$PROJECT_DIR$/buildSrc/src/main/groovy" />
+                </list>
+              </option>
+            </ExternalProjectBuildClasspathPojo>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="projectSyncType">
+      <map>
+        <entry key="$USER_HOME$/Desktop/servlet-mvc-testing" value="PREVIEW" />
+        <entry key="$USER_HOME$/Documents/Java/gymmp3" value="PREVIEW" />
+        <entry key="$USER_HOME$/Documents/Java/java-spring-ajax" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$" value="RE_IMPORT" />
+      </map>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/com/codegym/wc/repository/DepartRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/codegym/wc/service/GroupService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/codegym/wc/service/DepartService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/codegym/wc/service/impl/PlayerServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/codegym/wc/service/impl/DepartServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/codegym/wc/formatter/DepartFormatter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/fpoly/controller/DeapartController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/depart/delete.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/depart/edit.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/layout.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/depart/list.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/depart/create.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/fpoly/service/impl/DepartServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/fpoly/controller/DepartController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/fpoly/dao/LoginDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/fpoly/dao/LoginDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/fpoly/dao/LoginDAOImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/fpoly/service/LoginService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/fpoly/service/impl/LoginServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/fpoly/controller/LoginController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/fpoly/repository/StaffRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/fpoly/service/StaffService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/fpoly/service/impl/StaffServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/staff/delete.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/fpoly/model/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/fpoly/model/Depart.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/fpoly/repository/RecordRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/fpoly/service/RecordService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/fpoly/service/impl/RecordServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/fpoly/dao/impl/LoginDAOImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/fpoly/model/Staff.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/staff/create.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/fpoly/controller/StaffController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/fpoly/config/CheckRegex.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/staff/edit.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/staff/list.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/fpoly/formatter/StaffFormatter.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/fpoly/model/Record.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/record/delete.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/record/list.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/record/edit.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/staff/views.html" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/main/java/com/fpoly/config/ApplicationConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/fpoly/controller/SendEmailController.java" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/record/create.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/fpoly/controller/RecordController.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="false" />
+    <option name="FILTER_DEBUG" value="false" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="10" />
+    <option name="y" value="43" />
+    <option name="width" value="1624" />
+    <option name="height" value="1047" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="java5-assignment-employee-manager  " type="b2602c69:ProjectViewProjectNode" />
+              <item name="java5-assignment-employee-manager" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="java5-assignment-employee-manager  " type="b2602c69:ProjectViewProjectNode" />
+              <item name="java5-assignment-employee-manager" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java5-assignment-employee-manager  " type="b2602c69:ProjectViewProjectNode" />
+              <item name="java5-assignment-employee-manager" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="java5-assignment-employee-manager  " type="b2602c69:ProjectViewProjectNode" />
+              <item name="java5-assignment-employee-manager" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java5-assignment-employee-manager  " type="b2602c69:ProjectViewProjectNode" />
+              <item name="java5-assignment-employee-manager" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="fpoly" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java5-assignment-employee-manager  " type="b2602c69:ProjectViewProjectNode" />
+              <item name="java5-assignment-employee-manager" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="fpoly" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java5-assignment-employee-manager  " type="b2602c69:ProjectViewProjectNode" />
+              <item name="java5-assignment-employee-manager" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="fpoly" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java5-assignment-employee-manager  " type="b2602c69:ProjectViewProjectNode" />
+              <item name="java5-assignment-employee-manager" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="fpoly" type="462c0819:PsiDirectoryNode" />
+              <item name="formatter" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java5-assignment-employee-manager  " type="b2602c69:ProjectViewProjectNode" />
+              <item name="java5-assignment-employee-manager" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="fpoly" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java5-assignment-employee-manager  " type="b2602c69:ProjectViewProjectNode" />
+              <item name="java5-assignment-employee-manager" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="fpoly" type="462c0819:PsiDirectoryNode" />
+              <item name="repository" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java5-assignment-employee-manager  " type="b2602c69:ProjectViewProjectNode" />
+              <item name="java5-assignment-employee-manager" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="fpoly" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java5-assignment-employee-manager  " type="b2602c69:ProjectViewProjectNode" />
+              <item name="java5-assignment-employee-manager" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="fpoly" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java5-assignment-employee-manager  " type="b2602c69:ProjectViewProjectNode" />
+              <item name="java5-assignment-employee-manager" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java5-assignment-employee-manager  " type="b2602c69:ProjectViewProjectNode" />
+              <item name="java5-assignment-employee-manager" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java5-assignment-employee-manager  " type="b2602c69:ProjectViewProjectNode" />
+              <item name="java5-assignment-employee-manager" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java5-assignment-employee-manager  " type="b2602c69:ProjectViewProjectNode" />
+              <item name="java5-assignment-employee-manager" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="record" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java5-assignment-employee-manager  " type="b2602c69:ProjectViewProjectNode" />
+              <item name="java5-assignment-employee-manager" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="staff" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="ignore_missing_gitignore" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../wbd-java-email-send-mail" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="/usr/local/bin/node" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\IdeaProjects\java5-assignment-employee-manager\src\main\webapp\WEB-INF\views\record" />
+      <recent name="E:\IdeaProjects\java5-assignment-employee-manager\src\main\webapp\WEB-INF\views\staff" />
+      <recent name="E:\IdeaProjects\java5-assignment-employee-manager\src\main\java\com\codegym\wc\model" />
+      <recent name="E:\IdeaProjects\java5-assignment-employee-manager\src" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Tomcat Server.Unnamed">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+    </configuration>
+    <configuration name="CheckRegex" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.fpoly.config.CheckRegex" />
+      <module name="java5-assignment-employee-manager___main" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.fpoly.config.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration name="Unnamed" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat " ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER" value="false" />
+      <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="Gradle : com.codegym : java5-assignment-employee-manager  -1.0-SNAPSHOT.war">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_java5-assignment-employee-manager__" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="53023" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method>
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="Gradle : com.codegym : java5-assignment-employee-manager  -1.0-SNAPSHOT.war" />
+        </option>
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Tomcat Server.Unnamed" />
+      <item itemvalue="Application.CheckRegex" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.CheckRegex" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8130d0c6-2aa7-40e9-946a-77b0fcdbc95b" name="Default" comment="" />
+      <created>1531151294342</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1531151294342</updated>
+      <workItem from="1531151297775" duration="4593000" />
+      <workItem from="1531322791685" duration="2656000" />
+      <workItem from="1531325460554" duration="3611000" />
+      <workItem from="1531333625921" duration="582000" />
+      <workItem from="1531339953621" duration="1418000" />
+      <workItem from="1531414551824" duration="1553000" />
+      <workItem from="1531502595003" duration="1473000" />
+      <workItem from="1531504100044" duration="3670000" />
+      <workItem from="1531663178364" duration="11321000" />
+      <workItem from="1531735425779" duration="6557000" />
+      <workItem from="1531928328759" duration="10726000" />
+      <workItem from="1532271808438" duration="14776000" />
+    </task>
+    <task id="LOCAL-00001" summary="First commit">
+      <created>1532271983948</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1532271983948</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="62936000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32963374" />
+      <window_info anchor="right" id="Maven Projects" order="3" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Designer" order="2" />
+      <window_info anchor="bottom" id="Build" order="7" weight="0.32963374" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info id="Structure" order="1" sideWeight="0.11653718" side_tool="true" visible="true" weight="0.23720682" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.12430633" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="bottom" id="Java Enterprise" order="7" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3529412" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32963374" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.88346285" visible="true" weight="0.23720682" />
+      <window_info anchor="right" id="Bean Validation" order="3" />
+      <window_info id="Web" order="2" side_tool="true" />
+      <window_info anchor="right" id="Gradle" order="3" visible="true" weight="0.18656716" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32963374" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="First commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="First commit" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/depart/delete.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="17" column="10" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/depart/edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="24" column="52" selection-start-line="24" selection-start-column="52" selection-end-line="24" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/depart/create.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Downloads/gradle-4.7/caches/modules-2/files-2.1/javax.persistence/javax.persistence-api/2.2/462dff65f6f8bde02ee9d8afe07fe9d50268199c/javax.persistence-api-2.2-sources.jar!/javax/persistence/GeneratedValue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="77" column="11" selection-start-line="77" selection-start-column="11" selection-end-line="77" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Downloads/gradle-4.7/caches/modules-2/files-2.1/org.springframework/spring-web/4.3.17.RELEASE/42a297f13fd0c2bf304f0b4f589b589dc1e69159/spring-web-4.3.17.RELEASE-sources.jar!/org/springframework/web/context/support/ServletContextResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="37">
+          <caret line="140" selection-start-line="140" selection-end-line="140" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/jre/lib/rt.jar!/java/lang/Thread.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="37">
+          <caret line="215" selection-start-line="215" selection-end-line="215" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fpoly/service/impl/StaffServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="44" column="13" lean-forward="true" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" column="117" selection-start-line="9" selection-start-column="117" selection-end-line="9" selection-end-column="117" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fpoly/controller/HomeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="14" column="5" selection-start-line="11" selection-start-column="3" selection-end-line="14" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fpoly/model/Depart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fpoly/repository/DepartRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fpoly/service/LoginService.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fpoly/service/impl/LoginServiceImpl.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fpoly/controller/LoginController.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fpoly/service/StaffService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/staff/delete.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" column="27" lean-forward="true" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fpoly/service/impl/DepartServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#662#663#0" expanded="true" />
+            <element signature="e#719#720#0" expanded="true" />
+            <element signature="e#1105#1106#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fpoly/dao/impl/LoginDAOImpl.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fpoly/dao/LoginDAO.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fpoly/controller/DepartController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="26" column="69" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="69" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#632#633#0" expanded="true" />
+            <element signature="e#682#683#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fpoly/config/CheckRegex.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/staff/edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/depart/list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="25" column="33" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fpoly/config/ApplicationInitializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fpoly/formatter/DepartFormatter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3">
+          <caret line="13" lean-forward="true" selection-end-line="32" />
+          <folding>
+            <element signature="e#503#504#0" expanded="true" />
+            <element signature="e#553#554#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fpoly/formatter/StaffFormatter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="30" column="29" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
+          <folding>
+            <element signature="e#503#504#0" expanded="true" />
+            <element signature="e#553#554#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fpoly/repository/StaffRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fpoly/repository/RecordRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="14" column="54" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fpoly/service/RecordService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fpoly/service/DepartService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fpoly/service/impl/RecordServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="48" column="47" selection-start-line="48" selection-start-column="47" selection-end-line="48" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fpoly/controller/StaffController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="752">
+          <caret line="80" column="52" selection-start-line="80" selection-start-column="52" selection-end-line="80" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/layout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="512">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fpoly/model/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="16" column="27" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fpoly/model/Staff.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="92" column="19" selection-start-line="92" selection-start-column="19" selection-end-line="92" selection-end-column="19" />
+          <folding>
+            <element signature="e#2170#2171#0" expanded="true" />
+            <element signature="e#2199#2200#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/record/delete.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="11" column="51" selection-start-line="11" selection-start-column="51" selection-end-line="11" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/staff/list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="64" column="27" selection-start-line="64" selection-end-line="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/staff/create.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="67" column="14" selection-start-line="62" selection-start-column="7" selection-end-line="67" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/record/edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="25" column="68" selection-start-line="25" selection-start-column="68" selection-end-line="25" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/staff/views.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="34" column="57" selection-start-line="34" selection-start-column="57" selection-end-line="34" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fpoly/controller/SendEmailController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="15" column="38" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="15" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#588#589#0" expanded="true" />
+            <element signature="e#622#623#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Downloads/gradle-4.7/caches/modules-2/files-2.1/javax.servlet/javax.servlet-api/3.1.0/ab3976d4574c48d22dc1abf6a9e8bd0fdf928223/javax.servlet-api-3.1.0-sources.jar!/javax/servlet/ServletRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="215" column="18" selection-start-line="215" selection-start-column="18" selection-end-line="215" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/record/list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="42" column="51" lean-forward="true" selection-start-line="42" selection-start-column="51" selection-end-line="42" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="29" column="22" selection-start-line="29" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fpoly/config/ApplicationConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="950">
+          <caret line="154" column="25" selection-start-line="154" selection-start-column="25" selection-end-line="154" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fpoly/model/Record.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
+          <folding>
+            <element signature="e#942#943#0" expanded="true" />
+            <element signature="e#967#968#0" expanded="true" />
+            <element signature="e#1001#1002#0" expanded="true" />
+            <element signature="e#1029#1030#0" expanded="true" />
+            <element signature="e#1060#1061#0" expanded="true" />
+            <element signature="e#1087#1088#0" expanded="true" />
+            <element signature="e#1128#1129#0" expanded="true" />
+            <element signature="e#1160#1161#0" expanded="true" />
+            <element signature="e#1193#1194#0" expanded="true" />
+            <element signature="e#1222#1223#0" expanded="true" />
+            <element signature="e#1266#1267#0" expanded="true" />
+            <element signature="e#1302#1303#0" expanded="true" />
+            <element signature="e#1335#1336#0" expanded="true" />
+            <element signature="e#1366#1367#0" expanded="true" />
+            <element signature="e#1412#1413#0" expanded="true" />
+            <element signature="e#1452#1453#0" expanded="true" />
+            <element signature="e#1483#1484#0" expanded="true" />
+            <element signature="e#1511#1512#0" expanded="true" />
+            <element signature="e#1552#1553#0" expanded="true" />
+            <element signature="e#1586#1587#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/record/create.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="42" column="14" selection-start-line="42" selection-start-column="14" selection-end-line="42" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fpoly/controller/RecordController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="26" column="14" lean-forward="true" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

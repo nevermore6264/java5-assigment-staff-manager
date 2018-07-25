@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{/layout.html}">
+<head>
+    <meta charset="UTF-8">
+    <title>Create new record</title>
+</head>
+<body>
+
+<section layout:fragment="content">
+    <div class="main-header">
+        <h2 class="title">Create record</h2>
+    </div>
+    <th:block th:if="${message}">
+        <div th:text="${message}" class="alert alert-success" role="alert">
+        </div>
+    </th:block>
+    <form th:object="${record}" th:action="@{/records/create/}" method="post">
+
+        <div class="form-group">
+            <label>Type: </label><br>
+            <label><input type="radio" th:field="*{type}" value="1">Bonus</label>
+            <label><input type="radio" th:field="*{type}" value="0"> Discipline</label>
+        </div>
+
+        <div class="form-group">
+            <label>Reason: </label>
+            <input th:field="*{reason}" type="text" class="form-control"/>
+            <br>
+        </div>
+
+        <div class="form-group">
+            <label>Post Date</label>
+            <input th:field="*{postDate}" type="text" class="form-control"/>
+        </div>
+
+        <div class="form-group">
+            <label>Staff: </label>
+            <select class="form-control" th:field="*{staff}">
+                <option th:each="staff :${staffs}" th:value="${staff.id}" th:text="${staff.name}"></option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Subject</label>
+            <input th:name="subject" type="text" class="form-control"/>
+        </div>
+
+        <div class="form-group">
+            <label>Message</label>
+            <input th:name="content" type="text" class="form-control"/>
+        </div>
+
+        <br>
+        <button class="btn btn-primary">Create Record</button>
+
+    </form>
+</section>
+</body>
+</html>

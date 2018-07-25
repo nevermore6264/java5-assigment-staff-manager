@@ -7,11 +7,14 @@ import com.fpoly.service.StaffService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
+import org.springframework.mail.SimpleMailMessage;
+import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
 import java.util.Optional;
 
@@ -54,14 +57,30 @@ public class RecordController {
     }
 
     @PostMapping("/create")
-    public ModelAndView createRecord(@ModelAttribute("record") Record record) {
-
-        ModelAndView modelAndView = new ModelAndView("/player/create");
-
+    public ModelAndView createRecord(@ModelAttribute("record") Record record, HttpServletRequest request) {
+        ModelAndView modelAndView = new ModelAndView("/record/create");
+        doSendEmail(request, record.getStaff().getEmail());
         recordService.save(record);
         modelAndView.addObject("message", "New record is created");
         modelAndView.addObject("record", new Record());
+
         return modelAndView;
+    }
+
+    @Autowired
+    private JavaMailSender mailSender;
+
+    public void doSendEmail(HttpServletRequest request, String email) {
+        String subject = request.getParameter("subject");
+        String message = request.getParameter("content");
+
+        SimpleMailMessage simpleMailMessage = new SimpleMailMessage();
+        simpleMailMessage.setTo(email);
+        simpleMailMessage.setSubject(subject);
+        simpleMailMessage.setText(message);
+
+        // sends the e-mail
+        mailSender.send(simpleMailMessage);
     }
 
     @GetMapping("/{id}/edit")
@@ -77,7 +96,7 @@ public class RecordController {
     }
 
     @PostMapping("/{id}/edit")
-    public ModelAndView updateRecord(@Valid @ModelAttribute("record") Record record) {
+    public ModelAndView updateRecord(@ModelAttribute("record") Record record) {
         ModelAndView modelAndView = new ModelAndView("/record/edit");
         recordService.save(record);
         modelAndView.addObject("record", record);

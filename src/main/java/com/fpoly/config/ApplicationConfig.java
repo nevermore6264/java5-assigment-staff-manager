@@ -1,7 +1,9 @@
 package com.fpoly.config;
 
 import com.fpoly.formatter.DepartFormatter;
+import com.fpoly.formatter.StaffFormatter;
 import com.fpoly.service.DepartService;
+import com.fpoly.service.StaffService;
 import nz.net.ultraq.thymeleaf.LayoutDialect;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -35,7 +37,8 @@ import org.thymeleaf.spring4.SpringTemplateEngine;
 import org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver;
 import org.thymeleaf.spring4.view.ThymeleafViewResolver;
 import org.thymeleaf.templatemode.TemplateMode;
-
+import org.springframework.mail.javamail.JavaMailSender;
+import org.springframework.mail.javamail.JavaMailSenderImpl;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.sql.DataSource;
@@ -144,6 +147,26 @@ public class ApplicationConfig extends WebMvcConfigurerAdapter implements Applic
     @Override
     public void addFormatters(FormatterRegistry registry) {
         registry.addFormatter(new DepartFormatter(applicationContext.getBean(DepartService.class)));
+        registry.addFormatter(new StaffFormatter(applicationContext.getBean(StaffService.class)));
+    }
+
+    @Bean
+    public JavaMailSenderImpl getMailSender() {
+        JavaMailSenderImpl mailSender = new JavaMailSenderImpl();
+        //Using Gmail SMTP configuration.
+        mailSender.setHost("smtp.gmail.com");
+        mailSender.setPort(587);
+        mailSender.setUsername("hieupikas2606@gmail.com");
+        mailSender.setPassword("thuy1405");
+
+        Properties javaMailProperties = new Properties();
+        javaMailProperties.put("mail.smtp.starttls.enable", "true");
+        javaMailProperties.put("mail.smtp.auth", "true");
+        javaMailProperties.put("mail.transport.protocol", "smtp");
+        javaMailProperties.put("mail.debug", "true");
+
+        mailSender.setJavaMailProperties(javaMailProperties);
+        return mailSender;
     }
 
 

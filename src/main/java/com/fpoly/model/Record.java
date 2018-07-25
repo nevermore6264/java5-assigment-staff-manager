@@ -42,11 +42,11 @@ public class Record implements Serializable {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
-    public boolean getType() {
+    public boolean isType() {
         return type;
     }
 
@@ -62,11 +62,11 @@ public class Record implements Serializable {
         this.reason = reason;
     }
 
-    public Date getDate() {
+    public Date getPostDate() {
         return postDate;
     }
 
-    public void setDate(Date postDate) {
+    public void setPostDate(Date postDate) {
         this.postDate = postDate;
     }
 
@@ -77,5 +77,4 @@ public class Record implements Serializable {
     public void setStaff(Staff staff) {
         this.staff = staff;
     }
-
 }
