@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{/layout.html}">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up</title>
+</head>
+<body>
+<section layout:fragment="content">
+    <h2>Sign Up</h2>
+
+    <th:block th:if="${successMessage}">
+        <div class="alert alert-success" role="alert">
+            <p th:text="${successMessage}"></p>
+        </div>
+    </th:block>
+
+    <form th:action="@{/register}" th:object="${user}" method="post" class="form">
+        <div  th:if="${#fields.hasErrors()}" class="alert alert-danger" role="alert">
+            <div th:each="error : ${#fields.errors()}" th:text="${error}"></div>
+        </div>
+
+
+        <div class="form-group">
+            <label>Full Name:</label>
+            <input class="form-control" type="text" th:field="*{fullName}"/>
+        </div>
+
+        <div class="form-group">
+            <label>User Name:</label>
+            <input class="form-control" type="text" th:field="*{userName}"/>
+        </div>
+
+        <div class="form-group">
+            <label>Password:</label>
+            <input class="form-control" type="password" th:field="*{passWord}"/>
+        </div>
+        <br>
+        <br>
+        <input type="submit" value="Sign Up" class="btn btn-primary">
+    </form>
+</section>

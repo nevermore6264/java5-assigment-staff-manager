@@ -9,8 +9,13 @@ import org.springframework.web.servlet.ModelAndView;
 @RequestMapping("")
 public class HomeController {
 
-    @GetMapping("")
-    public String getHome() {
+    @GetMapping(value = {""})
+    public String getDashboard() {
+        return "/dashboard";
+    }
+
+    @GetMapping(value = {"/index"})
+    public String getIndex() {
         return "/index";
     }
 }
