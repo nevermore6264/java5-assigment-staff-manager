@@ -1,5 +1,6 @@
 package com.fpoly.config;
 
+import com.fpoly.Util.StorageUtils;
 import com.fpoly.formatter.DepartFormatter;
 import com.fpoly.formatter.StaffFormatter;
 import com.fpoly.service.DepartService;
@@ -29,9 +30,13 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.springframework.web.multipart.commons.CommonsMultipartResolver;
+import org.springframework.web.servlet.LocaleResolver;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
+import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
+import org.springframework.web.servlet.i18n.LocaleChangeInterceptor;
+import org.springframework.web.servlet.i18n.SessionLocaleResolver;
 import org.thymeleaf.TemplateEngine;
 import org.thymeleaf.extras.springsecurity4.dialect.SpringSecurityDialect;
 import org.thymeleaf.spring4.SpringTemplateEngine;
@@ -43,6 +48,7 @@ import org.springframework.mail.javamail.JavaMailSenderImpl;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.sql.DataSource;
+import java.util.Locale;
 import java.util.Properties;
 
 @Configuration
@@ -79,6 +85,9 @@ public class ApplicationConfig extends WebMvcConfigurerAdapter implements Applic
         registry
                 .addResourceHandler("/assets/**")
                 .addResourceLocations("/assets/");
+        registry
+                .addResourceHandler("/images/**")
+                .addResourceLocations("file:" + StorageUtils.FEATURE_LOCATION + "/");
     }
 
     //Thymeleaf Configuration
@@ -104,6 +113,7 @@ public class ApplicationConfig extends WebMvcConfigurerAdapter implements Applic
     @Bean
     public ThymeleafViewResolver viewResolver() {
         ThymeleafViewResolver viewResolver = new ThymeleafViewResolver();
+        viewResolver.setCharacterEncoding("UTF-8");
         viewResolver.setTemplateEngine(templateEngine());
         return viewResolver;
     }
@@ -179,7 +189,9 @@ public class ApplicationConfig extends WebMvcConfigurerAdapter implements Applic
     @Bean
     public MessageSource messageSource() {
         ResourceBundleMessageSource messageSource = new ResourceBundleMessageSource();
-        messageSource.setBasenames("ValidationMessages");
+        //messageSource.setBasenames("ValidationMessages");
+        messageSource.setBasename("message");
+        messageSource.setDefaultEncoding("UTF-8");
         return messageSource;
     }
 
@@ -191,5 +203,25 @@ public class ApplicationConfig extends WebMvcConfigurerAdapter implements Applic
         return multipartResolver;
     }
 
+//    @Bean
+//    public MessageSource messageSource() {
+//        ResourceBundleMessageSource messageSource = new ResourceBundleMessageSource();
+//        messageSource.setBasename("message");
+//        return messageSource;
+//    }
+
+    @Override
+    public void addInterceptors(InterceptorRegistry registry) {
+        LocaleChangeInterceptor interceptor = new LocaleChangeInterceptor();
+        interceptor.setParamName("lang");
+        registry.addInterceptor(interceptor);
+    }
+
+    @Bean
+    public LocaleResolver localeResolver() {
+        SessionLocaleResolver localeResolver = new SessionLocaleResolver();
+        localeResolver.setDefaultLocale(new Locale("vi"));
+        return localeResolver;
+    }
 
 }

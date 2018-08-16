@@ -1,8 +1,10 @@
 package com.fpoly.controller;
 
+import com.fpoly.Util.StorageUtils;
 import com.fpoly.model.Depart;
 import com.fpoly.model.Record;
 import com.fpoly.model.Staff;
+import com.fpoly.model.StaffForm;
 import com.fpoly.service.DepartService;
 import com.fpoly.service.RecordService;
 import com.fpoly.service.StaffService;
@@ -15,8 +17,10 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.validation.Valid;
+import java.io.IOException;
 import java.util.List;
 import java.util.Optional;
+import java.util.UUID;
 
 @Controller
 @RequestMapping("/staffs")
@@ -73,13 +77,27 @@ public class StaffController {
     }
 
     @PostMapping("/create")
-    public ModelAndView createStaff(@ModelAttribute("staff") Staff staff) {
-
+    public ModelAndView createStaff(@ModelAttribute("staff") StaffForm staffForm) {
         ModelAndView modelAndView = new ModelAndView("/staff/create");
-
-        staffService.save(staff);
-        modelAndView.addObject("message", "New staff is created");
-        modelAndView.addObject("staff", new Staff());
+        Staff staff = new Staff();
+        try {
+            String randomCode = UUID.randomUUID().toString();
+            String originFileName = staffForm.getPhoto().getOriginalFilename();
+            String randomName = randomCode + StorageUtils.getFileExtension(originFileName);
+            staffForm.getPhoto().transferTo(new java.io.File(StorageUtils.FEATURE_LOCATION + "/" + randomName));
+            staff.setName(staffForm.getName());
+            staff.setGender(staffForm.isGender());
+            staff.setBirthday(staffForm.getBirthday());
+            staff.setPhoto(randomName);
+            staff.setEmail(staffForm.getEmail());
+            staff.setPhone(staffForm.getPhone());
+            staff.setSalary(staffForm.getSalary());
+            staff.setNotes(staffForm.getNotes());
+            staff.setDepart(staffForm.getDepart());
+            staffService.save(staff);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         return modelAndView;
     }
 

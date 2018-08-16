@@ -162,4 +162,20 @@ public class Staff implements Serializable {
         this.records = records;
     }
 
+    @Override
+    public String toString() {
+        return "Staff{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", gender=" + gender +
+                ", birthday=" + birthday +
+                ", photo='" + photo + '\'' +
+                ", email='" + email + '\'' +
+                ", phone='" + phone + '\'' +
+                ", salary=" + salary +
+                ", notes='" + notes + '\'' +
+                ", depart=" + depart +
+                ", records=" + records +
+                '}';
+    }
 }

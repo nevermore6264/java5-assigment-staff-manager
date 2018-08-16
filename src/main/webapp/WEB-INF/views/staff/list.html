@@ -59,7 +59,7 @@
             </td>
 
             <td>
-                <img class="picture" th:src="'/assets/imgs/' + ${staff.photo}"> </img>
+                <img class="picture" th:src="@{/images/__${staff.photo}__}" > </img>
             </td>
 
             <td th:text="${#dates.format(staff.birthday,'dd/MM/yyyy')}">
