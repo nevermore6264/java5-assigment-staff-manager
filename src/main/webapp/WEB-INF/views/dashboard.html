@@ -4,9 +4,9 @@
       layout:decorate="~{/layout.html}">
 <head>
     <meta charset="UTF-8">
-    <title>Home page</title>
+    <title th:text="dashboard.title"></title>
 </head>
 <body>
 <section layout:fragment="content">
-    <h2>This is content dashboard page</h2>
+    <h2 th:text="dashboard.content"></h2>
 </section>

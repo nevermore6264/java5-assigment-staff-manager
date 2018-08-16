@@ -43,7 +43,6 @@ import org.thymeleaf.spring4.SpringTemplateEngine;
 import org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver;
 import org.thymeleaf.spring4.view.ThymeleafViewResolver;
 import org.thymeleaf.templatemode.TemplateMode;
-import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.JavaMailSenderImpl;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -202,13 +201,6 @@ public class ApplicationConfig extends WebMvcConfigurerAdapter implements Applic
         multipartResolver.setMaxUploadSizePerFile(10000000);
         return multipartResolver;
     }
-
-//    @Bean
-//    public MessageSource messageSource() {
-//        ResourceBundleMessageSource messageSource = new ResourceBundleMessageSource();
-//        messageSource.setBasename("message");
-//        return messageSource;
-//    }
 
     @Override
     public void addInterceptors(InterceptorRegistry registry) {

@@ -4,13 +4,13 @@
       xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title layout:title-pattern="$LAYOUT_TITLE - $CONTENT_TITLE">Employee Manager</title>
+    <title layout:title-pattern="$LAYOUT_TITLE - $CONTENT_TITLE" th:text="#{layout.title}"></title>
     <link href="/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
     <link href="/assets/css/style.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="/">Employee Manager</a>
+    <a class="navbar-brand" href="/" th:text="#{layout.heading}"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -20,18 +20,18 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent" sec:authorize="isAuthenticated()">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <a class="nav-link" href="/departs">
-                    List depart
+                <a class="nav-link" href="/departs" th:text="#{layout.departs}">
+
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/staffs">
-                    List staff
+                <a class="nav-link" href="/staffs" th:text="#{layout.staffs}">
+
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/records">
-                    List record
+                <a class="nav-link" href="/records" th:text="#{layout.records}">
+
                 </a>
             </li>
         </ul>
