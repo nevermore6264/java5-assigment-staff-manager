@@ -19,12 +19,12 @@
             <h2 class="title" th:text="#{staff.heading}"></h2>
         </div>
         <div class="col-md-6 text-right">
-            <a href="/staffs/create" class="btn btn-primary">Create Staff</a>
+            <a href="/staffs/create" class="btn btn-primary" th:text="#{staff.create}"></a>
         </div>
     </div>
 
     <form>
-        Search by name:
+        <a th:text="#{staff.search}"></a>
         <input name="string" class="form-control" type="text"/>
         <input type="submit" value="Search" class="btn btn-primary"/>
     </form>
@@ -32,17 +32,17 @@
     <table class="table">
         <thead>
         <tr>
-            <th>Serial</th>
-            <th>Name</th>
-            <th>Gender</th>
-            <th>Picture</th>
-            <th>Birthday</th>
-            <th>Salary</th>
-            <th>Email</th>
-            <th>Phone</th>
-            <th>Depart</th>
-            <th>Edit</th>
-            <th>Delete</th>
+            <th th:text="#{staff.id}"></th>
+            <th th:text="#{staff.name}"></th>
+            <th th:text="#{staff.gender}">Gender</th>
+            <th th:text="#{staff.picture}"></th>
+            <th th:text="#{staff.birthday}"></th>
+            <th th:text="#{staff.salary}"></th>
+            <th th:text="#{staff.email}"></th>
+            <th th:text="#{staff.phone}"></th>
+            <th th:text="#{staff.depart}"></th>
+            <th th:text="#{staff.edit}"></th>
+            <th th:text="#{staff.delete}"></th>
         </tr>
         </thead>
         <tbody>
@@ -93,8 +93,8 @@
         </tbody>
     </table>
     <div>
-        <a th:href="@{'/staffs'(page=${staffs.number - 1})}" th:if="${staffs.hasPrevious()}">Previous</a>
+        <a th:href="@{'/staffs'(page=${staffs.number - 1})}" th:if="${staffs.hasPrevious()}" th:text="#{staff.pre}"></a>
         <span th:text="${staffs.number + 1}"></span>/<span th:text="${staffs.totalPages}"></span>
-        <a th:href="@{'/staffs'(page=${staffs.number + 1})}" th:if="${staffs.hasNext()}">Next</a>
+        <a th:href="@{'/staffs'(page=${staffs.number + 1})}" th:if="${staffs.hasNext()}" th:text="#{staff.next}"></a>
     </div>
 </section>
