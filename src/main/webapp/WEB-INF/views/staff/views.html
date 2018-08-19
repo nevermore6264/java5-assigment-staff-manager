@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{/layout.html}">
+<head>
+    <meta charset="UTF-8">
+    <title>View Reason In Staff : <span th:text="${staff.name}"></span></title>
+</head>
+<body>
+<section layout:fragment="content">
+    <div class="main-header row">
+        <div class="col-md-6">
+            <h2 class="title">List Record</h2>
+        </div>
+    </div>
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Serial</th>
+            <th>Type</th>
+            <th>Reason</th>
+            <th>Post Date</th>
+            <th>Staff</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="record,inter : ${records}">
+            <td th:text="${inter.count}"></td>
+            <td th:switch="${record.type}">
+                <a th:case="${false}">Bonus</a>
+                <a th:case="${true}">Discipline</a>
+            </td>
+            <td th:text="${record.reason}"></td>
+            <td th:text="${#dates.format(record.postDate,'dd/MM/yyyy')}">
+            <td th:text="${record.staff.getName()}"></td>
+        </tr>
+        </tbody>
+    </table>
+    <div>
+        <a th:href="@{'/records'(page=${records.number - 1})}" th:if="${records.hasPrevious()}">Previous</a>
+        <span th:text="${records.number + 1}"></span>/<span th:text="${records.totalPages}"></span>
+        <a th:href="@{'/records'(page=${records.number + 1})}" th:if="${records.hasNext()}">Next</a>
+    </div>
+</section>

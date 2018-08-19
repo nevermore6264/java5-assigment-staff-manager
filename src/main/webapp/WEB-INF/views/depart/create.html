@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{/layout.html}">
+<head>
+    <meta charset="UTF-8">
+    <title>Create new depart</title>
+</head>
+<body>
+
+<section layout:fragment="content">
+    <div class="main-header">
+        <h2 class="title">Create depart</h2>
+    </div>
+    <th:block th:if="${message}">
+        <div th:text="${message}" class="alert alert-success" role="alert">
+        </div>
+    </th:block>
+    <form th:object="${depart}" method="post">
+        <div class="form-group">
+            <label>Name: </label>
+            <input th:field="*{name}" type="text" class="form-control"/>
+            <br>
+            <button class="btn btn-primary">Create Depart</button>
+        </div>
+    </form>
+</section>
+</body>
+</html>

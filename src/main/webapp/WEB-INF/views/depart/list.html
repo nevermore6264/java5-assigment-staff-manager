@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{/layout.html}">
+<head>
+    <meta charset="UTF-8">
+    <title>List Depart</title>
+</head>
+<body>
+<section layout:fragment="content">
+    <div class="main-header row">
+        <div class="col-md-6">
+            <h2 class="title">List Depart</h2>
+        </div>
+        <div class="col-md-6 text-right">
+            <a href="/departs/create" class="btn btn-primary">Create depart</a>
+        </div>
+    </div>
+    <table class="table">
+        <tr>
+            <th>Serial</th>
+            <th>Name</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+        <tr th:each="d, inter:${departs}">
+            <td th:text="${inter.count}"></td>
+            <td th:text="${d.name}"></td>
+            <td><a th:href="@{/departs/__${d.id}__/edit}">Edit</a></td>
+            <td><a th:href="@{/departs/__${d.id}__/delete}">Delete</a></td>
+        </tr>
+    </table>
+</section>
