@@ -39,17 +39,17 @@
     <div class="navbar-collapse">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item" sec:authorize="!isAuthenticated()">
-                <a class="nav-link" href="/login">Login</a>
+                <a class="nav-link" href="/login" th:text="#{layout.login}"></a>
             </li>
             <li class="nav-item" sec:authorize="isAuthenticated()">
-                <a class="nav-link" href="/logout">Logout (<span sec:authentication="principal.username"/>)</a>
+                <a class="nav-link" href="/logout" th:text="#{layout.logout}"> (<span sec:authentication="principal.username"/>)</a>
             </li>
         </ul>
     </div>
 </nav>
 
 <section layout:fragment="content" class="container main-content">
-    <p>Your page content goes here</p>
+
 </section>
 
 <footer>

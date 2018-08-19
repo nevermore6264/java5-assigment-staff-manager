@@ -4,13 +4,13 @@
       layout:decorate="~{/layout.html}">
 <head>
     <meta charset="UTF-8">
-    <title>Edit staff</title>
+    <title th:text="#{staff.titleEdit}"></title>
 </head>
 <body>
 <section layout:fragment="content">
 
     <div class="main-header">
-        <h2 class="title">Edit staff</h2>
+        <h2 class="title" th:text="#{staff.titleEdit}"></h2>
     </div>
 
     <th:block th:if="${message}">
@@ -21,50 +21,50 @@
             <input type="hidden" th:field="*{id}">
 
             <div class="form-group">
-                <label>Name: </label>
+                <label th:text="#{staff.name}">: </label>
                 <input th:field="*{name}" type="text" class="form-control"/>
                 <br>
             </div>
 
             <div class="form-group">
-                <label>Gender </label><br>
-                <label><input type="radio" th:field="*{gender}" value="1">Male</label>
-                <label><input type="radio" th:field="*{gender}" value="0"> Female</label>
+                <label th:text="#{staff.gender}"> </label><br>
+                <label><input type="radio" th:field="*{gender}" value="1" th:text="#{staff.male}"></label>
+                <label><input type="radio" th:field="*{gender}" value="0" th:text="#{staff.female}"></label>
             </div>
 
             <div class="form-group">
-                <label>Picture</label>
+                <label th:text="#{staff.picture}"></label>
                 <input th:field="*{photo}" type="text" class="form-control"/>
             </div>
 
             <div class="form-group">
-                <label>Birthday</label>
+                <label th:text="#{staff.birthday}"></label>
                 <input th:field="*{birthday}" type="text" class="form-control"/>
             </div>
 
             <div class="form-group">
-                <label>Salary</label>
+                <label th:text="#{staff.salary}"></label>
                 <input th:field="*{salary}" type="text" class="form-control"/>
             </div>
 
             <div class="form-group">
-                <label>Email</label>
+                <label th:text="#{staff.email}"></label>
                 <input th:field="*{email}" type="text" class="form-control"/>
             </div>
 
             <div class="form-group">
-                <label>Phone</label>
+                <label th:text="#{staff.phone}"></label>
                 <input th:field="*{phone}" type="text" class="form-control"/>
             </div>
 
 
             <div class="form-group">
-                <label>Notes</label>
+                <label th:text="#{staff.notes}"></label>
                 <textarea th:field="*{notes}" type="text" class="form-control"></textarea>
             </div>
 
             <div class="form-group">
-                <label>Depart: </label>
+                <label th:text="#{staff.depart}">: </label>
                 <select class="form-control" th:field="*{depart}">
                     <option th:each="departs :${departs}" th:value="${departs.id}" th:text="${departs.name}"></option>
                 </select>
@@ -72,7 +72,7 @@
 
             <br>
 
-            <button class="btn btn-primary" type="submit">Update</button>
+            <button class="btn btn-primary" type="submit" th:text="#{staff.titleEdit}"></button>
         </form>
 </section>
 </body>

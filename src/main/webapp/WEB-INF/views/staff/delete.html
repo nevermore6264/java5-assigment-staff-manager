@@ -4,15 +4,15 @@
       layout:decorate="~{/layout.html}">
 <head>
     <meta charset="UTF-8">
-    <title>Delete Staff</title>
+    <title th:text="#{staff.titleDelete}"></title>
 </head>
 <body>
 <section layout:fragment="content">
     <div class="container">
-        <h3>Are you sure want to delete this staff ?</h3>
+        <h3 th:text="#{staff.question}"></h3>
         <form method="post" th:action="@{/staffs/__${staff.id}__/delete}" th:object="${staff}">
-            <label>Staff: <span th:text="${staff.name}"></span></label><br>
-            <button class="btn btn-primary" type="submit">Delete</button>
+            <label th:text="staff.staff"> <span th:text="${staff.name}"></span></label><br>
+            <button class="btn btn-primary" type="submit" th:text="#{staff.delete}"></button>
         </form>
     </div>
 </section>
