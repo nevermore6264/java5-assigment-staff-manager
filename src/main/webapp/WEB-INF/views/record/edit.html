@@ -4,13 +4,13 @@
       layout:decorate="~{/layout.html}">
 <head>
     <meta charset="UTF-8">
-    <title>Edit record</title>
+    <title th:text="#{record.titleEdit}"></title>
 </head>
 <body>
 <section layout:fragment="content">
 
     <div class="main-header">
-        <h2 class="title">Edit record</h2>
+        <h2 class="title" th:text="#{record.titleEdit}"></h2>
     </div>
 
     <th:block th:if="${message}">

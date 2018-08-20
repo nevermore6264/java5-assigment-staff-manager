@@ -18,16 +18,16 @@
     </div>
     <table class="table">
         <tr>
-            <th>Serial</th>
-            <th>Name</th>
-            <th>Edit</th>
-            <th>Delete</th>
+            <th th:text="#{depart.id}"></th>
+            <th th:text="#{depart.name}"></th>
+            <th th:text="#{depart.edit}"></th>
+            <th th:text="#{depart.delete}"></th>
         </tr>
         <tr th:each="d, inter:${departs}">
             <td th:text="${inter.count}"></td>
             <td th:text="${d.name}"></td>
-            <td><a th:href="@{/departs/__${d.id}__/edit}">Edit</a></td>
-            <td><a th:href="@{/departs/__${d.id}__/delete}">Delete</a></td>
+            <td><a th:href="@{/departs/__${d.id}__/edit}" th:text="#{depart.edit}"></a></td>
+            <td><a th:href="@{/departs/__${d.id}__/delete}" th:text="#{depart.delete}"></a></td>
         </tr>
     </table>
 </section>
