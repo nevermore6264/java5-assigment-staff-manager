@@ -9,4 +9,7 @@ public interface DepartRepository extends PagingAndSortingRepository<Depart, Lon
     Depart findByName(String name);
 
     Page<Depart> findAll(Pageable pageable);
+
+    Page<Depart> findAllByNameContains(String name, Pageable pageable);
+
 }

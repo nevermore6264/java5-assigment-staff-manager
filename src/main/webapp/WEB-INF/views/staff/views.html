@@ -13,32 +13,48 @@
             <h2 class="title">List Record</h2>
         </div>
     </div>
+
+    <form>
+        <a th:text="#{record.search}"></a>
+        <input name="string" class="form-control" type="text"/>
+        <input type="submit" class="btn btn-primary" th:value="#{record.searchbtn}"/>
+    </form>
+
     <table class="table">
         <thead>
         <tr>
-            <th>Serial</th>
-            <th>Type</th>
-            <th>Reason</th>
-            <th>Post Date</th>
-            <th>Staff</th>
+            <th th:text="#{record.id}"></th>
+            <th th:text="#{record.type}"></th>
+            <th th:text="#{record.reason}"></th>
+            <th th:text="#{record.date}"></th>
+            <th th:text="#{staff.name}"></th>
+            <th th:text="#{record.edit}"></th>
+            <th th:text="#{record.delete}"></th>
         </tr>
         </thead>
         <tbody>
         <tr th:each="record,inter : ${records}">
             <td th:text="${inter.count}"></td>
             <td th:switch="${record.type}">
-                <a th:case="${false}">Bonus</a>
-                <a th:case="${true}">Discipline</a>
+                <a th:case="${false}" th:text="#{record.bonus}"></a>
+                <a th:case="${true}" th:text="#{record.discipline}"></a>
             </td>
             <td th:text="${record.reason}"></td>
             <td th:text="${#dates.format(record.postDate,'dd/MM/yyyy')}">
             <td th:text="${record.staff.getName()}"></td>
+            <td>
+                <a th:href="@{/records/__${record.id}__/edit}" th:text="#{record.edit}"></a>
+            </td>
+            <td>
+                <a th:href="@{/records/__${record.id}__/delete}" class="text-danger" th:text="#{record.delete}"></a>
+            </td>
         </tr>
         </tbody>
     </table>
     <div>
-        <a th:href="@{'/records'(page=${records.number - 1})}" th:if="${records.hasPrevious()}">Previous</a>
+        <a th:href="@{'/records'(page=${records.number - 1})}" th:if="${records.hasPrevious()}"
+           th:text="#{staff.pre}"></a>
         <span th:text="${records.number + 1}"></span>/<span th:text="${records.totalPages}"></span>
-        <a th:href="@{'/records'(page=${records.number + 1})}" th:if="${records.hasNext()}">Next</a>
+        <a th:href="@{'/records'(page=${records.number + 1})}" th:if="${records.hasNext()}" th:text="#{staff.next}"></a>
     </div>
 </section>

@@ -1,4 +1,4 @@
-package com.fpoly.Util;
+package com.fpoly.util;
 
 import java.io.File;
 

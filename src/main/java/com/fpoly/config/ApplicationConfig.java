@@ -1,6 +1,6 @@
 package com.fpoly.config;
 
-import com.fpoly.Util.StorageUtils;
+import com.fpoly.util.StorageUtils;
 import com.fpoly.formatter.DepartFormatter;
 import com.fpoly.formatter.StaffFormatter;
 import com.fpoly.service.DepartService;
@@ -19,8 +19,11 @@ import org.springframework.context.annotation.PropertySource;
 import org.springframework.context.support.ResourceBundleMessageSource;
 import org.springframework.core.env.Environment;
 import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.data.web.PageableHandlerMethodArgumentResolver;
+import org.springframework.data.web.SortHandlerMethodArgumentResolver;
 import org.springframework.data.web.config.EnableSpringDataWebSupport;
 import org.springframework.format.FormatterRegistry;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
@@ -222,11 +225,22 @@ public class ApplicationConfig extends WebMvcConfigurerAdapter implements Applic
 
     @Override
     public void addArgumentResolvers(List<HandlerMethodArgumentResolver> argumentResolvers) {
-        PageableHandlerMethodArgumentResolver resolver = new PageableHandlerMethodArgumentResolver();
-        resolver.setOneIndexedParameters(true);
-        resolver.setFallbackPageable(new PageRequest(0, 2));
-        argumentResolvers.add(resolver);
-        super.addArgumentResolvers(argumentResolvers);
+        Sort defaultSort = new Sort(new Sort.Order(Sort.Direction.ASC, "id"));
+        Pageable defaultPage = new PageRequest(0, 3, defaultSort);
+
+        SortHandlerMethodArgumentResolver sortHandlerMethodArgumentResolver = new SortHandlerMethodArgumentResolver();
+        sortHandlerMethodArgumentResolver.setSortParameter("sort");
+        sortHandlerMethodArgumentResolver.setFallbackSort(defaultSort);
+
+        PageableHandlerMethodArgumentResolver pageableResolver = new PageableHandlerMethodArgumentResolver();
+        pageableResolver.setMaxPageSize(100);
+        pageableResolver.setOneIndexedParameters(false);
+        pageableResolver.setPageParameterName("page");
+        pageableResolver.setSizeParameterName("size");
+        pageableResolver.setFallbackPageable(defaultPage);
+
+        argumentResolvers.add(sortHandlerMethodArgumentResolver);
+        argumentResolvers.add(pageableResolver);
     }
 
 }

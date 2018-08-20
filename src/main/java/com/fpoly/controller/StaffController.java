@@ -1,6 +1,6 @@
 package com.fpoly.controller;
 
-import com.fpoly.Util.StorageUtils;
+import com.fpoly.util.StorageUtils;
 import com.fpoly.model.Depart;
 import com.fpoly.model.Record;
 import com.fpoly.model.Staff;
@@ -12,13 +12,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Controller;
-import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.validation.Valid;
 import java.io.IOException;
-import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 

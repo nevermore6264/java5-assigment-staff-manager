@@ -44,5 +44,11 @@ public class DepartServiceImpl implements DepartService {
     public void delete(Long id) {
         departRepository.delete(id);
     }
+
+    @Override
+    public Page<Depart> findAllByNameContains(String name, Pageable pageable) {
+        return departRepository.findAllByNameContains(name, pageable);
+
+    }
 }
 

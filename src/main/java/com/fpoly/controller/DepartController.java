@@ -1,7 +1,9 @@
 package com.fpoly.controller;
 
 import com.fpoly.model.Depart;
+import com.fpoly.model.Staff;
 import com.fpoly.service.DepartService;
+import com.fpoly.service.StaffService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -10,27 +12,46 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.validation.Valid;
+import java.util.Optional;
 
 
 @Controller
 @RequestMapping("/departs")
 public class DepartController {
     private DepartService departService;
+    private StaffService staffService;
 
     @Autowired
-    public DepartController(DepartService departService) {
+    public DepartController(DepartService departService,StaffService staffService) {
         this.departService = departService;
+        this.staffService = staffService;
     }
 
     @GetMapping("")
-    public ModelAndView getAllDepart(Pageable pageable) {
+    public ModelAndView listCountries(@RequestParam("string") Optional<String> s, Pageable pageable) {
+        Page<Depart> departs;
+        if (s.isPresent()) {
+            departs = departService.findAllByNameContains(s.get(), pageable);
+        } else {
+            departs = departService.findAll(pageable);
+        }
         ModelAndView modelAndView = new ModelAndView("/depart/list");
-
-        Page<Depart> departs = departService.findAll(pageable);
-
         modelAndView.addObject("departs", departs);
-
         return modelAndView;
+    }
+
+    @GetMapping("/{id}/views")
+    public ModelAndView showListRecord(@PathVariable("id") Long id, Pageable pageable) {
+        Depart depart = departService.findById(id);
+        if (depart == null) {
+            return new ModelAndView("/error404");
+        } else {
+            ModelAndView modelAndView = new ModelAndView("/depart/views");
+            Page<Staff> staffs = staffService.findAllByDepart(depart, pageable);
+            modelAndView.addObject("depart",depart);
+            modelAndView.addObject("staffs", staffs);
+            return modelAndView;
+        }
     }
 
     @GetMapping("/create")

@@ -4,13 +4,7 @@
       layout:decorate="~{/layout.html}">
 <head>
     <meta charset="UTF-8">
-    <title th:text="#{staff.title}"></title>
-    <style>
-        .picture {
-            width: 100px;
-            height: 100px;
-        }
-    </style>
+    <title th:text="#{staff.title}"> of <span th:text="${depart.name}"></title>
 </head>
 <body>
 <section layout:fragment="content">
@@ -59,7 +53,7 @@
             </td>
 
             <td>
-                <img class="picture" th:src="@{/images/__${staff.photo}__}"> </img>
+                <img style="width: 100px;height: 100px" class="picture" th:src="@{/images/__${staff.photo}__}"> </img>
             </td>
 
             <td th:text="${#dates.format(staff.birthday,'dd/MM/yyyy')}">

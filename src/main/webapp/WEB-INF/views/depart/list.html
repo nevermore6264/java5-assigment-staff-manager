@@ -16,6 +16,13 @@
             <a href="/departs/create" class="btn btn-primary" th:text="#{depart.create}"></a>
         </div>
     </div>
+
+    <form>
+        <a th:text="#{staff.search}"></a>
+        <input name="string" class="form-control" type="text"/>
+        <input type="submit" th:value="#{staff.search}" class="btn btn-primary"/>
+    </form>
+
     <table class="table">
         <tr>
             <th th:text="#{depart.id}"></th>
@@ -25,9 +32,18 @@
         </tr>
         <tr th:each="d, inter:${departs}">
             <td th:text="${inter.count}"></td>
-            <td th:text="${d.name}"></td>
+            <td>
+                <a th:text="${d.name}" th:href="@{/departs/__${d.id}__/views}"></a>
+            </td>
             <td><a th:href="@{/departs/__${d.id}__/edit}" th:text="#{depart.edit}"></a></td>
             <td><a th:href="@{/departs/__${d.id}__/delete}" th:text="#{depart.delete}"></a></td>
         </tr>
     </table>
+    <div>
+        <a th:href="@{'/departs'(page=${departs.getNumber() - 1})}" th:if="${departs.hasPrevious()}"
+           th:text="#{staff.pre}"></a>
+        <span th:text="${departs.number + 1}"></span>/<span th:text="${departs.totalPages}"></span>
+        <a th:href="@{'/departs'(page=${departs.getNumber() + 1})}" th:if="${departs.hasNext()}"
+           th:text="#{staff.next}"></a>
+    </div>
 </section>
