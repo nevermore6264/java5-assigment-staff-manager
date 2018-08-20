@@ -11,6 +11,7 @@ import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -57,13 +58,16 @@ public class RecordController {
     }
 
     @PostMapping("/create")
-    public ModelAndView createRecord(@ModelAttribute("record") Record record, HttpServletRequest request) {
+    public ModelAndView createRecord(@Validated @ModelAttribute("record") Record record, HttpServletRequest request, BindingResult bindingResult) {
         ModelAndView modelAndView = new ModelAndView("/record/create");
-        doSendEmail(request, record.getStaff().getEmail());
-        recordService.save(record);
-        modelAndView.addObject("message", "New record is created");
-        modelAndView.addObject("record", new Record());
-
+        if (bindingResult.hasErrors()) {
+            modelAndView.addObject("record", new Record());
+        } else {
+            doSendEmail(request, record.getStaff().getEmail());
+            recordService.save(record);
+            modelAndView.addObject("message", "New record is created");
+            modelAndView.addObject("record", new Record());
+        }
         return modelAndView;
     }
 
@@ -96,14 +100,17 @@ public class RecordController {
     }
 
     @PostMapping("/{id}/edit")
-    public ModelAndView updateRecord(@ModelAttribute("record") Record record) {
+    public ModelAndView updateRecord(@Validated @ModelAttribute("record") Record record,BindingResult bindingResult) {
         ModelAndView modelAndView = new ModelAndView("/record/edit");
-        recordService.save(record);
-        modelAndView.addObject("record", record);
-        modelAndView.addObject("message", "Record is updated");
+        if (bindingResult.hasErrors()) {
+            modelAndView.addObject("record", record);
+        } else {
+            recordService.save(record);
+            modelAndView.addObject("record", record);
+            modelAndView.addObject("message", "Record is updated");
+        }
         return modelAndView;
     }
-
 
     @GetMapping("/{id}/delete")
     public ModelAndView showDeleteForm(@PathVariable("id") Long id) {

@@ -3,6 +3,7 @@ package com.fpoly.model;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 import java.util.Date;
 
@@ -15,8 +16,10 @@ public class Record implements Serializable {
 
     private boolean type;
 
+    @NotNull(message = "Field reason is not null")
     private String reason;
 
+    @NotNull(message = "Field date is format dd/MM/yyyy")
     @Temporal(TemporalType.DATE)
     @DateTimeFormat(pattern = "dd/MM/yyyy")
     private Date postDate;

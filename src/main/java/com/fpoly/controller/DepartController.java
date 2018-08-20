@@ -8,6 +8,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Controller;
+import org.springframework.validation.BindingResult;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -22,7 +24,7 @@ public class DepartController {
     private StaffService staffService;
 
     @Autowired
-    public DepartController(DepartService departService,StaffService staffService) {
+    public DepartController(DepartService departService, StaffService staffService) {
         this.departService = departService;
         this.staffService = staffService;
     }
@@ -48,7 +50,7 @@ public class DepartController {
         } else {
             ModelAndView modelAndView = new ModelAndView("/depart/views");
             Page<Staff> staffs = staffService.findAllByDepart(depart, pageable);
-            modelAndView.addObject("depart",depart);
+            modelAndView.addObject("depart", depart);
             modelAndView.addObject("staffs", staffs);
             return modelAndView;
         }
@@ -62,11 +64,16 @@ public class DepartController {
     }
 
     @PostMapping("/create")
-    public ModelAndView createDepart(@ModelAttribute("depart") Depart depart) {
+    public ModelAndView createDepart(@Validated @ModelAttribute("depart") Depart depart, BindingResult bindingResult) {
+
         ModelAndView modelAndView = new ModelAndView("/depart/create");
-        departService.save(depart);
-        modelAndView.addObject("message", "New depart is created");
-        modelAndView.addObject("depart", new Depart());
+        if (bindingResult.hasErrors()) {
+            modelAndView.addObject("depart", new Depart());
+        } else {
+            departService.save(depart);
+            modelAndView.addObject("message", "New depart is created");
+            modelAndView.addObject("depart", new Depart());
+        }
         return modelAndView;
     }
 
@@ -112,12 +119,15 @@ public class DepartController {
     }
 
     @PostMapping("/{id}/edit")
-    public ModelAndView update(@Valid @ModelAttribute("depart") Depart depart) {
-
-        ModelAndView modelAndView = new ModelAndView("/depart/edit");
-        departService.save(depart);
-        modelAndView.addObject("depart", depart);
-        modelAndView.addObject("message", "Update successfully");
+    public ModelAndView update(@Validated @ModelAttribute("depart") Depart depart, BindingResult bindingResult) {
+        ModelAndView modelAndView = modelAndView = new ModelAndView("/depart/edit");
+        if (bindingResult.hasFieldErrors()) {
+            modelAndView.addObject("depart", depart);
+        } else {
+            departService.save(depart);
+            modelAndView.addObject("depart", depart);
+            modelAndView.addObject("message", "Update successfully");
+        }
         return modelAndView;
     }
 }

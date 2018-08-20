@@ -5,6 +5,12 @@
 <head>
     <meta charset="UTF-8">
     <title th:text="#{depart.create}"></title>
+    <style type="text/css">
+        *[id$=errors]{
+            color:red;
+            font-style: italic;
+        }
+    </style>
 </head>
 <body>
 
@@ -17,8 +23,11 @@
         </div>
     </th:block>
     <form th:object="${depart}" method="post">
+        <div th:if="${#fields.hasErrors()}" class="alert alert-danger" role="alert">
+            <div th:each="error : ${#fields.errors()}" th:text="${error}"></div>
+        </div>
         <div class="form-group">
-            <label>Name: </label>
+            <label th:text="#{depart.name}"> </label>
             <input th:field="*{name}" type="text" class="form-control"/>
             <br>
             <button class="btn btn-primary" th:text="#{depart.create}"></button>

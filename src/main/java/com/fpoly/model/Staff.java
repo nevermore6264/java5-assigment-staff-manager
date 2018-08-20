@@ -1,8 +1,11 @@
 package com.fpoly.model;
 
+import org.hibernate.validator.constraints.Length;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Pattern;
 import java.io.Serializable;
 import java.util.Collection;
 import java.util.Date;
@@ -16,20 +19,28 @@ public class Staff implements Serializable {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
+    @NotNull(message = "Field name isn't null")
     private String name;
 
     private boolean gender;
 
+    @NotNull(message = "Field date is format dd/MM/yyyy")
     @Temporal(TemporalType.DATE)
     @DateTimeFormat(pattern = "dd/MM/yyyy")
     private Date birthday;
 
+
     private String photo;
 
+    @NotNull(message = "Field email isn't null")
     private String email;
 
+    @NotNull(message = "Field phone isn't null")
+    @Length(min = 10, max = 11, message = "Field phone must length >=10 && <=11")
     private String phone;
 
+    @NotNull(message = "Field phone isn't null")
+    @Pattern(regexp = "[0-9]{1,10}",message = "Field salary must be number")
     private float salary;
 
     private String notes;

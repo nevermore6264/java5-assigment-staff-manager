@@ -21,7 +21,7 @@ public class DepartServiceImpl implements DepartService {
 
     @Override
     public Depart save(Depart depart) {
-        return this.departRepository.save(depart);
+            return this.departRepository.save(depart);
     }
 
     @Override

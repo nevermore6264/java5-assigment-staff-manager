@@ -11,7 +11,7 @@
     <div class="container">
         <h3 th:text="#{depart.question}"></h3>
         <form method="post" th:action="@{/departs/__${depart.id}__/delete}" th:object="${depart}">
-            <label th:text="#{depart.depart}">: <span th:text="${depart.name}"></span></label><br>
+            <label th:text="#{depart.depart}">: <span th:text="${depart.getName()}"></span></label><br>
             <button class="btn btn-primary" type="submit" th:text="#{depart.delete}"></button>
         </form>
     </div>

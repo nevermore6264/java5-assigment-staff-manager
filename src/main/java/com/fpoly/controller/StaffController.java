@@ -12,6 +12,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Controller;
+import org.springframework.validation.BindingResult;
+import org.springframework.validation.BindingResultUtils;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -55,7 +58,7 @@ public class StaffController {
         } else {
             ModelAndView modelAndView = new ModelAndView("/staff/views");
             Page<Record> records = recordService.findAllByStaff(staff, pageable);
-            modelAndView.addObject("staff",staff);
+            modelAndView.addObject("staff", staff);
             modelAndView.addObject("records", records);
             return modelAndView;
         }
@@ -75,26 +78,30 @@ public class StaffController {
     }
 
     @PostMapping("/create")
-    public ModelAndView createStaff(@ModelAttribute("staff") StaffForm staffForm) {
+    public ModelAndView createStaff(@Validated @ModelAttribute("staff") StaffForm staffForm, BindingResult bindingResult) {
         ModelAndView modelAndView = new ModelAndView("/staff/create");
         Staff staff = new Staff();
-        try {
-            String randomCode = UUID.randomUUID().toString();
-            String originFileName = staffForm.getPhoto().getOriginalFilename();
-            String randomName = randomCode + StorageUtils.getFileExtension(originFileName);
-            staffForm.getPhoto().transferTo(new java.io.File(StorageUtils.FEATURE_LOCATION + "/" + randomName));
-            staff.setName(staffForm.getName());
-            staff.setGender(staffForm.isGender());
-            staff.setBirthday(staffForm.getBirthday());
-            staff.setPhoto(randomName);
-            staff.setEmail(staffForm.getEmail());
-            staff.setPhone(staffForm.getPhone());
-            staff.setSalary(staffForm.getSalary());
-            staff.setNotes(staffForm.getNotes());
-            staff.setDepart(staffForm.getDepart());
-            staffService.save(staff);
-        } catch (IOException e) {
-            e.printStackTrace();
+        if (bindingResult.hasErrors()) {
+
+        } else {
+            try {
+                String randomCode = UUID.randomUUID().toString();
+                String originFileName = staffForm.getPhoto().getOriginalFilename();
+                String randomName = randomCode + StorageUtils.getFileExtension(originFileName);
+                staffForm.getPhoto().transferTo(new java.io.File(StorageUtils.FEATURE_LOCATION + "/" + randomName));
+                staff.setName(staffForm.getName());
+                staff.setGender(staffForm.isGender());
+                staff.setBirthday(staffForm.getBirthday());
+                staff.setPhoto(randomName);
+                staff.setEmail(staffForm.getEmail());
+                staff.setPhone(staffForm.getPhone());
+                staff.setSalary(staffForm.getSalary());
+                staff.setNotes(staffForm.getNotes());
+                staff.setDepart(staffForm.getDepart());
+                staffService.save(staff);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
         return modelAndView;
     }
@@ -112,11 +119,15 @@ public class StaffController {
     }
 
     @PostMapping("/{id}/edit")
-    public ModelAndView updateStaff(@Valid @ModelAttribute("staff") Staff staff) {
+    public ModelAndView updateStaff(@Validated @ModelAttribute("staff") Staff staff,BindingResult bindingResult) {
         ModelAndView modelAndView = new ModelAndView("/staff/edit");
-        staffService.save(staff);
-        modelAndView.addObject("staff", staff);
-        modelAndView.addObject("message", "Staff is updated");
+        if (bindingResult.hasErrors()){
+            modelAndView.addObject("staff", staff);
+        }else {
+            staffService.save(staff);
+            modelAndView.addObject("staff", staff);
+            modelAndView.addObject("message", "Staff is updated");
+        }
         return modelAndView;
     }
 

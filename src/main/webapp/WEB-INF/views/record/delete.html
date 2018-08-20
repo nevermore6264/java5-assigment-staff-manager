@@ -11,7 +11,7 @@
     <div class="container">
         <h3 th:text="#{record.question}"></h3>
         <form method="post" th:action="@{/records/__${record.id}__/delete}" th:object="${record}">
-            <label>Reason: <span th:text="${record.reason}"></span></label><br>
+            <label th:text="#{record.reason}">: <span th:text="${record.getReason()}"></span></label><br>
             <button class="btn btn-primary" type="submit" th:text="#{record.delete}"></button>
         </form>
     </div>

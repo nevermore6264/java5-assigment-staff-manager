@@ -1,6 +1,10 @@
 package com.fpoly.model;
 
+import org.hibernate.validator.constraints.Length;
+
 import javax.persistence.*;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 import java.util.Collection;
 import java.util.List;
@@ -12,6 +16,9 @@ public class Depart implements Serializable {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
+    @NotNull(message = "Field depart isn't null")
+    @NotBlank(message = "Field depart isn't blank")
+    @Length(min = 2,message = "Field name must >=2")
     private String name;
 
     @OneToMany

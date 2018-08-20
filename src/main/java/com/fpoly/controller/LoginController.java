@@ -2,10 +2,10 @@ package com.fpoly.controller;
 
 import com.fpoly.model.User;
 import com.fpoly.service.UserService;
-import com.fpoly.validation.UserValidator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -39,9 +39,7 @@ public class LoginController {
     }
 
     @PostMapping("/register")
-    public ModelAndView saveUser(@Valid @ModelAttribute("user") User user, BindingResult bindingResult) {
-        new UserValidator(userService).validate(user, bindingResult);
-
+    public ModelAndView saveUser(@Validated @ModelAttribute("user") User user, BindingResult bindingResult) {
         if (!bindingResult.hasFieldErrors()) {
             userService.save(user);
             ModelAndView modelAndView = new ModelAndView("redirect:/login");
