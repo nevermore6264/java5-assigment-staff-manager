@@ -4,16 +4,16 @@
       layout:decorate="~{/layout.html}">
 <head>
     <meta charset="UTF-8">
-    <title>List Depart</title>
+    <title th:text="#{depart.list}"></title>
 </head>
 <body>
 <section layout:fragment="content">
     <div class="main-header row">
         <div class="col-md-6">
-            <h2 class="title">List Depart</h2>
+            <h2 class="title" th:text="#{depart.list}"></h2>
         </div>
         <div class="col-md-6 text-right">
-            <a href="/departs/create" class="btn btn-primary">Create depart</a>
+            <a href="/departs/create" class="btn btn-primary" th:text="#{depart.create}"></a>
         </div>
     </div>
     <table class="table">

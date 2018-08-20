@@ -4,15 +4,15 @@
       layout:decorate="~{/layout.html}">
 <head>
     <meta charset="UTF-8">
-    <title>Delete Depart</title>
+    <title th:text="#{depart.titleDelete}"></title>
 </head>
 <body>
 <section layout:fragment="content">
     <div class="container">
-        <h3>Are you sure want to delete this depart?</h3>
+        <h3 th:text="#{depart.question}"></h3>
         <form method="post" th:action="@{/departs/__${depart.id}__/delete}" th:object="${depart}">
-            <label>Depart: <span th:text="${depart.name}"></span></label><br>
-            <button class="btn btn-primary" type="submit">Delete</button>
+            <label th:text="#{depart.name}">: <span th:text="${depart.name}"></span></label><br>
+            <button class="btn btn-primary" type="submit" th:text="#{depart.delete}"></button>
         </form>
     </div>
 </section>
