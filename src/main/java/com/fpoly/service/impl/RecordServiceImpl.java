@@ -9,6 +9,8 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class RecordServiceImpl implements RecordService {
 
@@ -53,6 +55,11 @@ public class RecordServiceImpl implements RecordService {
     @Override
     public Page<Record> findAllByStaff(Staff staff, Pageable pageable) {
         return recordRepository.findAllByStaff(staff,pageable);
+    }
+
+    @Override
+    public List<Record> findByStaff(Staff staff) {
+        return recordRepository.findByStaff(staff);
     }
 }
 

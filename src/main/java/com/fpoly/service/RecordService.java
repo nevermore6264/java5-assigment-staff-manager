@@ -5,6 +5,8 @@ import com.fpoly.model.Staff;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
+import java.util.List;
+
 public interface RecordService {
     Record findById(Long id);
 
@@ -19,4 +21,6 @@ public interface RecordService {
     Page<Record> findAllByReasonContains(String reason, Pageable pageable);
 
     Page<Record> findAllByStaff(Staff staff, Pageable pageable);
+
+    List<Record> findByStaff(Staff staff);
 }
