@@ -1,7 +1,9 @@
 package com.fpoly.controller;
 
 import com.fpoly.model.Depart;
+import com.fpoly.model.Staff;
 import com.fpoly.service.DepartService;
+import com.fpoly.service.StaffService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -10,6 +12,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.validation.Valid;
+import java.util.List;
 
 
 @Controller
@@ -17,9 +20,12 @@ import javax.validation.Valid;
 public class DepartController {
     private DepartService departService;
 
+    private StaffService staffService;
+
     @Autowired
-    public DepartController(DepartService departService) {
+    public DepartController(DepartService departService, StaffService staffService) {
         this.departService = departService;
+        this.staffService = staffService;
     }
 
     @GetMapping("")
@@ -69,8 +75,14 @@ public class DepartController {
     public ModelAndView deleteDepart(@PathVariable("id") Long id) {
         Depart depart = departService.findById(id);
         ModelAndView modelAndView = new ModelAndView();
+        List<Staff> staffList = staffService.findByDepart(depart);
         if (depart != null) {
-            departService.delete(id);
+            if (!staffList.isEmpty()) {
+                modelAndView.setViewName("/error500");
+                return modelAndView;
+            } else {
+                departService.delete(id);
+            }
         }
         modelAndView.setViewName("redirect:/departs");
         return modelAndView;

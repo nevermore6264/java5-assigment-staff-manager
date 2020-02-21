@@ -9,6 +9,8 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class StaffServiceImpl implements StaffService {
     private StaffRepository staffRepository;
@@ -33,8 +35,8 @@ public class StaffServiceImpl implements StaffService {
     }
 
     @Override
-    public void save(Staff country) {
-        staffRepository.save(country);
+    public void save(Staff staff) {
+        staffRepository.save(staff);
     }
 
     @Override
@@ -50,5 +52,10 @@ public class StaffServiceImpl implements StaffService {
     @Override
     public Page<Staff> findAllByDepart(Depart depart, Pageable pageable) {
         return staffRepository.findAllByDepart(depart, pageable);
+    }
+
+    @Override
+    public List<Staff> findByDepart(Depart depart) {
+        return staffRepository.findByDepart(depart);
     }
 }

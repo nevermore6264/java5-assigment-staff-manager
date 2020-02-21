@@ -53,7 +53,7 @@ public class StaffController {
         } else {
             ModelAndView modelAndView = new ModelAndView("/staff/views");
             Page<Record> records = recordService.findAllByStaff(staff, pageable);
-            modelAndView.addObject("staff",staff);
+            modelAndView.addObject("staff", staff);
             modelAndView.addObject("records", records);
             return modelAndView;
         }
@@ -74,7 +74,6 @@ public class StaffController {
 
     @PostMapping("/create")
     public ModelAndView createStaff(@ModelAttribute("staff") Staff staff) {
-
         ModelAndView modelAndView = new ModelAndView("/staff/create");
 
         staffService.save(staff);
@@ -120,11 +119,16 @@ public class StaffController {
 
     @PostMapping("/{id}/delete")
     public ModelAndView deleteStaff(@PathVariable("id") Long id) {
-        ModelAndView modelAndView;
+        ModelAndView modelAndView = new ModelAndView("redirect:/staffs");
         Staff staff = staffService.findById(id);
+        List<Record> recordList = recordService.findByStaff(staff);
         if (staff != null) {
-            staffService.delete(id);
-            modelAndView = new ModelAndView("redirect:/staffs");
+            if (!recordList.isEmpty()) {
+                modelAndView.setViewName("/error500");
+                return modelAndView;
+            } else {
+                staffService.delete(id);
+            }
         } else {
             modelAndView = new ModelAndView("/error404");
         }
